@@ -1,0 +1,43 @@
+How to reverse a string using while loop,for loop and slicing?
+......................................................................................................
+Using for loop
+......................................................................................................
+def reverse(text):
+     a = ""
+     j=len(text)
+     for i in range(1,j+1):
+         a += text[j-i]
+     return a
+print(reverse("Hello Python"))
+
+O/P->nohtyp olleH
+.......................................................................................................
+Second way
+def rev_string(text):
+    rev=''
+    for i in text:
+        rev=i+rev
+    print(rev)
+rev_string('hello welcome to python')
+
+O/P->nohtyp ot emoclew olleh
+.........................................................................................................
+Using While loop:
+
+def rev_string(text):
+    rev=''
+    i=len(text)-1
+    while i>=0:
+        rev=rev+text[i]
+        i=i-1
+    print(rev)
+rev_string("hello python")
+
+O/P->nohtyp olleh
+..........................................................................................................
+Using Slicing:
+
+s="Hello Python"
+print(s[::-1])
+
+O/P->nohtyP olleH
