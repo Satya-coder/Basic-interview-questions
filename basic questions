@@ -41,3 +41,16 @@ s="Hello Python"
 print(s[::-1])
 
 O/P->nohtyP olleH
+..........................................................................................................
+How to reverse a number using python?
+
+def reverse_num(num):
+    str1=0
+    while num>0:
+        dig=num%10
+        str1=str1*10+dig
+        num=num//10
+    print(str1)
+reverse_num(1234)
+
+O/P->4321
