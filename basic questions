@@ -54,3 +54,18 @@ def reverse_num(num):
 reverse_num(1234)
 
 O/P->4321
+.............................................................................................................
+How to remove duplicates from input?
+Input = [(1,'DPOP','Server', 'load') , (2,'DPOP','Server', 'load') , (3,'DPOP','Server', 'load') , (4,'DPOP','Server', 'load') , (5,'DPOP','Server', 'load')]
+visited=set()
+output=[]
+for a,b,c,d in Input:
+     if not b in visited:
+          visited.add(b)
+          output.append((a,b,c,d))
+print("List of tuple after removing duplicates :", Outputoutput)
+
+Output--> List of tuple after removing duplicates : [(1, 'DPOP', 'Server', 'load')]
+...............................................................................................................
+
+
