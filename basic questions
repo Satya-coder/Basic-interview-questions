@@ -68,4 +68,27 @@ print("List of tuple after removing duplicates :", Outputoutput)
 Output--> List of tuple after removing duplicates : [(1, 'DPOP', 'Server', 'load')]
 ...............................................................................................................
 
+Find the frequency of each items using List Comprehension?
+
+weekdays = ['sun','mon','tue','wed','thu','fri','sun','mon','mon']
+print([[x,weekdays.count(x)] for x in set(weekdays)]
+
+Output-->[['tue', 1], ['wed', 1], ['mon', 3], ['fri', 1], ['thu', 1], ['sun', 2]]
+................................................................................................................
+Closure in Python:
+A function object when called by the other function.It is used to eliminate the code redundancy.
+
+def Multiply_number(num):
+     def product(number):
+          return num*number
+     return product
+num_2=Multiply_number(2)
+print(num_2(11))
+print(num_2(6))
+
+Output-->22
+         12
+.................................................................................................................
+
+
 
